@@ -1,0 +1,42 @@
+<app-template-user>
+        <form class="container-inputs field_inputs">
+            <div class="container">
+                <!-- address sign in -->
+                <h4 class="style-address">Sign in</h4>
+                <div class="user-type">
+                    <label class="address">User type</label>
+                    <!-- note : here set class active  -->
+                    <button mat-button  class="btn-style active">Individuals</button>
+                    <button mat-button  class="btn-style">Business Sector</button>
+                </div>
+                <!-- input material here -->
+                <!-- email field -->
+                <div class="input_style">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Email</mat-label>
+                        <input matInput placeholder="your mail" type="email" >
+                    </mat-form-field>
+                </div>
+                <!-- password field -->
+                <div class="input_style">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Password</mat-label>
+                        <input matInput type="password" placeholder="your password">
+                    </mat-form-field>
+                    <div class="password-details">
+                        <mat-checkbox class="style-pass"><span>Remember me</span></mat-checkbox>
+                        <a href="#" class="style-pass">Forget Passsword ?</a>
+                    </div>
+                </div>
+        
+                <!-- button sign in -->
+                <button mat-button class="btn-primary">Sign in</button>
+        
+                <!-- for new account -->
+                <div class="createAccount">
+                    You have been an account ? 
+                    <a href="#">create Account</a>
+                </div>
+            </div>
+        </form>
+</app-template-user>

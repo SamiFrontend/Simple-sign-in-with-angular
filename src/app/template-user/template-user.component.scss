@@ -1,0 +1,144 @@
+@import '../file_sass/globalClasses.scss';
+
+
+#template-fields{
+    height: 100vh ;
+    width: 100%;
+    @extend .flexer ;
+    font-size: 10px ;
+    padding: 0 1vw ;
+}
+
+
+
+.box-content{
+    display: flex;
+    border: 1px solid $borderColor;
+    border-radius: 5px ;
+    // max-width: 250rem ;
+    flex: 0 1 60rem ;
+}
+
+
+
+.password-details{
+    @extend .flexer;
+    justify-content: space-between !important;
+    position: absolute ;
+    bottom: -10px;
+    width: 100% ;
+    height: 10px ;
+    .style-pass{
+        font-size: .8rem ;
+        color: $mainColor;
+        text-decoration: none ;
+        &:hover{
+            color: black ;
+        }
+    }
+}
+
+
+
+
+.createAccount{
+    text-align: center;
+    font-size: .8rem  ;
+    color: rgba(0,0,0,.7);
+    a{
+        color: rgb(29, 29, 182);
+        text-decoration: none ;
+    }
+}
+
+.style-box{
+    width: 40% ;
+    background-image: linear-gradient(to bottom , $bgColor , #5b0f11 );
+    color: white ;
+    position: relative;
+    text-align: center ;
+    z-index: -1;
+    &::after{
+        position: absolute;
+        content: '';
+        left: 0;
+        width: 100% ;
+        bottom: 0;
+        height: 50% ;
+        background: linear-gradient(to bottom , $bgColor , transparent )
+        , url(../../assets/img/industry.jpg) no-repeat center ;
+        background-size: cover;
+        opacity: .2;
+    }
+
+
+    .brand{
+        width: 6rem ;
+        margin: 5.2rem auto  0 ;
+        position: relative;
+        z-index: 1000;
+        &::before{
+            position: absolute;
+            content: '';
+            bottom: -15px;
+            left: -40px ;
+            width: 120px ;
+            height: 120px ;
+            opacity: .2;
+            z-index: -1;
+            background: url('../../assets/img/dotted.svg') no-repeat center ;
+            background-size: contain;
+        }
+        img{
+            width:100%;
+            height: 100% ; 
+            border-radius: 50% ;
+        }
+    }
+
+
+    .address{
+        font-size: 1.8rem ;
+        font-family: $addressFont ;
+        margin: 2px ;
+       
+    }
+
+    span{
+        font-size: .9rem ;
+        font-family: $mainFont  ;
+        color: rgba($color: #fff, $alpha: .7);
+    }
+}
+
+
+
+
+@media (max-width: 650px ){
+    .style-box{
+        display: none !important;
+    }
+
+    .style-address{
+        position: relative;
+        padding-bottom: 40px ;
+        &::after{
+            content: 'E-service for Royal Commision in yanbu';
+            position: absolute;
+            bottom : 5px;
+            left: 0 ;
+            color: #b1b1b1 ;
+            font-size: 14px ; 
+        }
+    }
+}
+
+
+
+
+@media (max-width : 450px ){
+    .box-content{
+        flex-basis : 100% !important ;
+        padding: 0 ;
+  }
+}

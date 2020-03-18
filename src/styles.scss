@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0 }
+
+ .mat-checkbox-persistent-ripple{
+    background-color: rgb(23, 156, 23) !important;
+}
+
+
+
+.mat-checkbox-checked.mat-accent .mat-checkbox-background{
+    background-color: rgb(34, 165, 34) !important  ;
+}
+
+
+

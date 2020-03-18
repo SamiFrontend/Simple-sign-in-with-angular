@@ -1,0 +1,18 @@
+@import '../file_sass/globalClasses.scss';
+@import '../template-user/template-user.component.scss';
+
+
+
+.box-content{
+    display: flex;
+    border: 1px solid $borderColor;
+    border-radius: 5px ;
+    // max-width: 250rem ;
+    flex: 0 1 60rem ;
+    .container-inputs{
+        width: 60% ;
+        .container{
+            padding: 9em 7em ;
+        }
+    }
+}

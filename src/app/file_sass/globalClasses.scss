@@ -1,0 +1,139 @@
+@import '../file_sass/variable.scss';
+
+* {
+    font-family: $addressFont ;
+    box-sizing: border-box;
+}
+    
+.box-content{
+    display: flex;
+    border: 1px solid $borderColor;
+    border-radius: 5px ;
+    // max-width: 250rem ;
+    flex: 0 1 60rem ;
+    .container-inputs{
+        width: 60% ;
+        .container{
+            padding: 9em 7em ;
+        }
+    }
+}
+
+    .container-inputs{
+        width: 60% ;
+        .container{
+            padding: 9em 7em ;
+        }
+    }
+
+
+
+.user-type{
+    margin: 10px 0 ;
+    .address{
+        color: black ;
+        font-family: $addressFont;
+        font-size: .9rem ;
+        display: block ;
+        margin-bottom: 7px ;
+
+    }
+
+    .btn-style{
+        border: none ;
+        border: 1px solid $borderColor;
+        outline: none ;
+        background-color: transparent ;
+        cursor: pointer ;
+        padding: .8em .7em;
+        border-radius: 5px ;
+        color: rgb(104, 103, 103);
+        margin-right: 15px ;
+        margin-bottom: 10px ;
+        line-height: 1 !important ;
+        transition: background-color .5s ease-out , color .6s ease-out ;
+        &:hover{
+            @extend .hover_style ;
+        }
+    }
+
+    // style for click on the button
+    .hover_style{
+        color: black  !important ;
+        font-family: $addressFont !important ;
+        background-color: #3a7ed2 ;
+        color: white !important ;
+    }
+
+    .active{
+        @extend .hover_style ;
+    }
+}
+
+
+
+
+// global classes 
+.flexer{
+    display: flex;
+    justify-content: center ;
+    align-items: center ;
+}
+
+.style-address{
+    font-size: 2.5rem ;
+    font-family: $addressFont ;
+    color: $mainColor ;
+    border-bottom: 1px solid  $borderColor ;
+    padding: 25px 0  ;
+    margin: 0;
+}
+
+.input_style{
+    margin-top: 10px ;
+    position: relative;
+    & > * {
+        width: 100% !important ;
+        font-size: .85rem ;
+    }
+}
+
+
+.btn-primary{
+    margin: 50px 0 ;
+    width: 100% ;
+    background-color: $bgColor;
+    color: white ;
+    padding: 6px 0;
+    
+}
+
+
+@media (max-width : 750px ){
+    .container{
+        padding: 9em 4em !important ;
+    }
+}
+
+@media (max-width : 450px ){
+    .container{
+        padding: 9em 0 !important ;
+    }
+    
+    .container-inputs {
+        width: 95% !important;
+        margin: 0 auto;
+    }
+    
+}
+
+
+@media (max-width: 650px ){
+    .container-inputs{
+        width: 80% !important;
+        margin: 0 auto;
+    }
+    .container{
+        padding: 9em 0 !important ;
+   }
+}
