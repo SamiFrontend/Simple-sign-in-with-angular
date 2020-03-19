@@ -51,7 +51,6 @@
         margin-right: 15px ;
         margin-bottom: 10px ;
         line-height: 1 !important ;
-        transition: background-color .5s ease-out , color .6s ease-out ;
         &:hover{
             @extend .hover_style ;
         }
@@ -61,7 +60,7 @@
     .hover_style{
         color: black  !important ;
         font-family: $addressFont !important ;
-        background-color: #3a7ed2 ;
+        background-image: linear-gradient(to right , $bgColor , $secondryColor );
         color: white !important ;
     }
 

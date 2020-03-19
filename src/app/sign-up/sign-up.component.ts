@@ -11,7 +11,7 @@ export class SignUpComponent {
 
  active_ : boolean = true ;
 
- setActive(){
-   return this.active_ = !this.active_ ;
+ setActive(val){
+   return this.active_ = val ;
  }
 }
