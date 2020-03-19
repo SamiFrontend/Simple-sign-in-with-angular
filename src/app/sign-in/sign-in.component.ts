@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-sign-in',
   templateUrl: './sign-in.component.html',
   styleUrls: ['./sign-in.component.scss']
 })
-export class SignInComponent implements OnInit {
+export class SignInComponent {
 
-  constructor() { }
+  active_ : boolean = true ;
 
-  ngOnInit(): void {
+  isActive(val){
+    return this.active_ = val ;
   }
 
 }

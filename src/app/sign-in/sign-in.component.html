@@ -6,8 +6,8 @@
                 <div class="user-type">
                     <label class="address">User type</label>
                     <!-- note : here set class active  -->
-                    <button mat-button  class="btn-style active">Individuals</button>
-                    <button mat-button  class="btn-style">Business Sector</button>
+                    <button mat-button  [class.active]="active_"  (click)="isActive(true) ; $event.preventDefault()"  class="btn-style active">Individuals</button>
+                    <button mat-button  [class.active]="!active_"  (click)="isActive(false) ; $event.preventDefault()"  class="btn-style">Business Sector</button>
                 </div>
                 <!-- input material here -->
                 <!-- email field -->

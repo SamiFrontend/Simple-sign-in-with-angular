@@ -58,14 +58,16 @@
 
     // style for click on the button
     .hover_style{
+        color: black   ;
+        font-family: $addressFont !important ;
+        border: 1px solid black ;
+    }
+
+    .active{
         color: black  !important ;
         font-family: $addressFont !important ;
         background-image: linear-gradient(to right , $bgColor , $secondryColor );
         color: white !important ;
-    }
-
-    .active{
-        @extend .hover_style ;
     }
 }
 

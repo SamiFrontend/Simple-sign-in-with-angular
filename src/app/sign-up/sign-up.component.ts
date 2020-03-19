@@ -7,11 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignUpComponent {
 
- countries : string[] = ['egypt' , 'Saudi Arabia' , 'France' , 'UAE'];
 
  active_ : boolean = true ;
 
- setActive(val){
+ isActive(val){
    return this.active_ = val ;
  }
 }
