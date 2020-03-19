@@ -1,0 +1,74 @@
+<app-template-user>
+    <form class="container-inputs field_inputs">
+        <div class="container">
+            <!-- address sign in -->
+            <h4 class="style-address">Sign up</h4>
+            <div class="user-type">
+                <!-- <label class="address">User type</label> -->
+                <!-- note : here set class active  -->
+                <!-- <button mat-button  class="btn-style active">Individuals</button>
+                <button mat-button  class="btn-style">Business Sector</button> -->
+            </div>
+            <!-- input material here -->
+            <!-- nationl Id -->
+            <div class="input_style">
+                <mat-form-field appearance="outline">
+                    <mat-label>National ID</mat-label>
+                    <input matInput placeholder="your number" type="text">
+                </mat-form-field>
+            </div>
+            
+            <!-- select nationality -->
+            <div class="input_style">
+                <mat-form-field>
+                    <mat-label>Nationality</mat-label>
+                    <mat-select>
+                      <mat-option value="option1">Egypt</mat-option>
+                      <mat-option value="option2">Saudi Arabia</mat-option>
+                      <mat-option value="option3">KSA</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </div>
+            <!-- Gender -->
+            <div class="user-type">
+                <label class="address">Gender</label>
+                <!-- note : here set class active  -->
+                <button mat-button [class.active]="active_" (click)="setActive()"  class="btn-style">Male</button>
+                <button mat-button [class.active]="!active_" (click)="setActive()"  class="btn-style">Female</button>
+            </div>
+            <!-- full name -->
+            <div class="input_style">
+                <mat-form-field appearance="outline">
+                    <mat-label>Full Name</mat-label>
+                    <input matInput placeholder="your name" type="text">
+                </mat-form-field>
+            </div>
+            
+            <!-- email field -->
+            <div class="input_style">
+                <mat-form-field appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input matInput placeholder="your mail" type="email">
+                </mat-form-field>
+            </div>
+            <!-- password field -->
+            <div class="input_style password_">
+                <mat-form-field appearance="outline">
+                    <mat-label>Password</mat-label>
+                    <input matInput type="password" placeholder="your password">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Confirm password</mat-label>
+                    <input matInput type="password" placeholder="your password">
+                </mat-form-field>
+            </div>
+
+            <!-- button sign in -->
+            <button mat-button class="btn-primary">Register</button>
+            
+            <span id="line_or"></span>
+            <!-- sign in -->
+            <button mat-button class="btn-primary sign_in">Sign in</button>
+        </div>
+    </form>
+</app-template-user>

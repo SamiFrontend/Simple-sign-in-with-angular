@@ -1,0 +1,52 @@
+@import '../file_sass/globalClasses.scss';
+@import '../template-user/template-user.component.scss';
+
+
+.password_{
+ display: flex ;
+ justify-content: space-between;
+ & > * {
+     width: 46% !important ;
+ }
+}
+
+
+.container{
+    padding: 5em 3.5vw !important ;
+}
+
+
+
+#line_or{
+    background-color: $borderColor ;
+    height: 1px ;
+    display: block ;
+    position: relative;
+    text-align: center;
+    &::after{
+        position: absolute;
+        content: 'OR';
+        left: 47% ;
+        top: -15px;
+        padding: 7px ;
+        background-color: #fff;
+        font-family: $addressFont;
+
+    }
+}
+
+
+.btn-primary{
+    margin: 26px 0 ;
+}
+
+
+
+.sign_in{
+    background-color: #dadada;
+    color: #29282c;
+}
+
+.input_style{
+    margin: 0 !important ;
+}
